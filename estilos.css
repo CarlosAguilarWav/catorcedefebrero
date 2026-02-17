@@ -1,0 +1,89 @@
+/* Importar fuente gótica */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #34130d, #18121e);
+    color: #e6e6e6;
+    font-family: 'Cinzel', serif;
+}
+
+/* Títulos */
+h1, h2, h3 {
+    text-align: center;
+    color: #c9a227; /* dorado oscuro */
+    text-shadow: 0 0 10px #5a0000, 0 0 20px #2b0000;
+    letter-spacing: 3px;
+}
+
+/* Párrafos */
+p {
+    max-width: 800px;
+    margin: 20px auto;
+    line-height: 1.6;
+    font-size: 18px;
+    text-align: center;
+}
+
+/* Botones */
+button {
+    background-color: #2b0000;
+    color: #c9a227;
+    border: 2px solid #c9a227;
+    padding: 12px 24px;
+    font-family: 'Cinzel', serif;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background-color: #c9a227;
+    color: #0b0b0f;
+    box-shadow: 0 0 15px #c9a227;
+}
+
+/* Tarjetas */
+.card {
+    background-color: rgba(20, 0, 20, 0.8);
+    border: 1px solid #5a0000;
+    padding: 30px;
+    margin: 30px auto;
+    width: 80%;
+    box-shadow: 0 0 25px rgba(90, 0, 0, 0.6);
+    border-radius: 10px;
+}
+
+/* Enlaces */
+a {
+    color: #c9a227;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: #ffffff;
+    text-shadow: 0 0 8px #c9a227;
+}
+
+/* Línea decorativa */
+hr {
+    border: none;
+    height: 2px;
+    background: linear-gradient(to right, transparent, #5a0000, transparent);
+    margin: 40px 0;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 250px);
+    justify-content: center;
+    gap: 20px;
+}
+
+.galeria img {
+    width: 250px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
